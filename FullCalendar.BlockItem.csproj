@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ContentTargetFolders>.</ContentTargetFolders>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <Product>FullCalendar BlockItem</Product>
+    <PackageId>FullCalendar.BlockItem</PackageId>
+    <Version>1.0.6</Version>
+    <Authors>Huw Reddick</Authors>
+    <Title>FullCalendar BlockItem</Title>
+    <Description>...</Description>
+    <PackageTags>umbraco plugin package</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Umbraco.Cms.Web.Common" Version="10.0.0" />
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="App_Plugins\FullCalendar.BlockItem\**" ExcludeFromSingleFile="true" CopyToPublishDirectory="Always" />
+    <None Include="buildTransitive\**" Pack="true" PackagePath="buildTransitive" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Migrations\package.xml" />
+    <EmbeddedResource Include="Migrations\package.xml" />
+  </ItemGroup>
+</Project>

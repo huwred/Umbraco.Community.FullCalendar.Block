@@ -1,0 +1,21 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <FullCalendarBlockItemContentFilesPath>$(MSBuildThisFileDirectory)..\App_Plugins\FullCalendar.BlockItem\**\*.*</FullCalendarBlockItemContentFilesPath>
+  </PropertyGroup>
+
+  <Target Name="CopyFullCalendarBlockItemAssets" BeforeTargets="Build">
+    <ItemGroup>
+      <FullCalendarBlockItemContentFiles Include="$(FullCalendarBlockItemContentFilesPath)" />
+    </ItemGroup>
+    <Message Text="Copying FullCalendar.BlockItem files: $(FullCalendarBlockItemContentFilesPath) - #@(FullCalendarBlockItemContentFiles->Count()) files" Importance="high" />
+    <Copy SourceFiles="@(FullCalendarBlockItemContentFiles)" DestinationFiles="@(FullCalendarBlockItemContentFiles->'$(MSBuildProjectDirectory)\App_Plugins\FullCalendar.BlockItem\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+
+  <Target Name="ClearFullCalendarBlockItemAssets" BeforeTargets="Clean">
+    <ItemGroup>
+      <FullCalendarBlockItemDir Include="$(MSBuildProjectDirectory)\App_Plugins\FullCalendar.BlockItem\" />
+    </ItemGroup>
+    <Message Text="Clear old FullCalendar.BlockItem data" Importance="high" />
+    <RemoveDir Directories="@(FullCalendarBlockItemDir)" />
+  </Target>
+</Project>

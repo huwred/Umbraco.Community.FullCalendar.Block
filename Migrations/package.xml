@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<umbPackage>
+  <info>
+    <package>
+      <name>FullCalendar BlockItem</name>
+    </package>
+  </info>
+  <DocumentTypes>
+    <DocumentType Folders="Block+Grid+Items" FolderKeys="22d8c5cc-e3b8-4d10-8226-4b5a0ca79ca0">
+      <Info>
+        <Name>fullCalendar</Name>
+        <Alias>fullCalendar</Alias>
+        <Key>8f6132ec-2144-4fe5-974e-53680c003197</Key>
+        <Icon>icon-calendar-alt color-black</Icon>
+        <Thumbnail>folder.png</Thumbnail>
+        <Description />
+        <AllowAtRoot>False</AllowAtRoot>
+        <IsListView>False</IsListView>
+        <IsElement>True</IsElement>
+        <Variations>Nothing</Variations>
+        <Compositions />
+        <AllowedTemplates />
+        <DefaultTemplate></DefaultTemplate>
+      </Info>
+      <Structure />
+      <GenericProperties>
+        <GenericProperty>
+          <Name>Url</Name>
+          <Alias>dataSource</Alias>
+          <Key>960a0d85-0f4e-4fb3-9447-5421ddb79192</Key>
+          <Type>Umbraco.TextBox</Type>
+          <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+          <Tab Alias="dataSource">DataSource</Tab>
+          <SortOrder>0</SortOrder>
+          <Mandatory>False</Mandatory>
+          <LabelOnTop>True</LabelOnTop>
+          <Description><![CDATA[The datasource Url should point to an api that returns json formatted events
+[
+{
+    "title":"Legal Principles in Shipping Business Exam",
+    "description":"Legal Principles in Shipping Business exam",
+    "start":"2022-10-19T23:00:00Z",
+    "end":"2022-10-19T23:00:00Z",
+    "id":"0f87be74-7321-ec11-a97f-0022483fd864",
+    "url":null,
+    "allDay":true
+}
+]]]></Description>
+          <Variations>Nothing</Variations>
+        </GenericProperty>
+        <GenericProperty>
+          <Name>Left</Name>
+          <Alias>left</Alias>
+          <Key>b864fa7a-1bd9-40b3-b017-8ee29cb76019</Key>
+          <Type>Umbraco.TextBox</Type>
+          <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+          <Tab Alias="headerToolbar">Header Toolbar</Tab>
+          <SortOrder>0</SortOrder>
+          <Mandatory>False</Mandatory>
+          <LabelOnTop>True</LabelOnTop>
+          <Description><![CDATA[Strings with comma/space separated values. Values separated by a comma will be displayed adjacently. Values separated by a space will be displayed with a small gap in between. May contain any of the following values: title, prev, next, prevYear, nextYear, today]]></Description>
+          <Variations>Nothing</Variations>
+        </GenericProperty>
+        <GenericProperty>
+          <Name>Center</Name>
+          <Alias>center</Alias>
+          <Key>07e8599c-1497-43cb-a582-01ebbcdc57ff</Key>
+          <Type>Umbraco.TextBox</Type>
+          <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+          <Tab Alias="headerToolbar">Header Toolbar</Tab>
+          <SortOrder>1</SortOrder>
+          <Mandatory>False</Mandatory>
+          <LabelOnTop>True</LabelOnTop>
+          <Description><![CDATA[May contain any of the following values: title, prev, next, prevYear, nextYear, today]]></Description>
+          <Variations>Nothing</Variations>
+        </GenericProperty>
+        <GenericProperty>
+          <Name>Right</Name>
+          <Alias>right</Alias>
+          <Key>8e024037-e62e-4c01-9163-aeb895d8faf1</Key>
+          <Type>Umbraco.TextBox</Type>
+          <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+          <Tab Alias="headerToolbar">Header Toolbar</Tab>
+          <SortOrder>2</SortOrder>
+          <Mandatory>False</Mandatory>
+          <LabelOnTop>True</LabelOnTop>
+          <Description><![CDATA[May contain any of the following values: title, prev, next, prevYear, nextYear, today]]></Description>
+          <Variations>Nothing</Variations>
+        </GenericProperty>
+      </GenericProperties>
+      <Tabs>
+        <Tab>
+          <Id>203</Id>
+          <Key>ba45b40c-4b05-44e6-b3ba-e9aacc143324</Key>
+          <Type>Group</Type>
+          <Caption>DataSource</Caption>
+          <Alias>dataSource</Alias>
+          <SortOrder>1</SortOrder>
+        </Tab>
+        <Tab>
+          <Id>204</Id>
+          <Key>e0688659-5417-4e33-a1ec-f490b2c48678</Key>
+          <Type>Group</Type>
+          <Caption>Header Toolbar</Caption>
+          <Alias>headerToolbar</Alias>
+          <SortOrder>2</SortOrder>
+        </Tab>
+      </Tabs>
+      <HistoryCleanupPolicy preventCleanup="false" />
+    </DocumentType>
+  </DocumentTypes>
+  <MediaTypes />
+  <Templates />
+  <Stylesheets />
+  <Scripts />
+  <PartialViews>
+    <View path="blockgrid\Components\fullCalendar.cshtml"><![CDATA[@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockGridItem>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
+@{
+    var content = (ContentModels.FullCalendar)Model.Content;
+}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" />
+<div id='calendar' class="mt-3"></div>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js" defer></script>
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+        (function($) {
+            var calendarEl = document.getElementById('calendar');
+            if (calendarEl) {
+                var calendar = new FullCalendar.Calendar(calendarEl,
+                {
+                    selectable: false,
+                    headerToolbar: {
+                        left: '@content.Left',
+                        center: '@content.Center',
+                        right: '@content.Right'
+                    },
+                    events: "@content.DataSource",
+                    initialView: 'dayGridMonth',
+                    eventClick: function(info) {
+                        MakePageBusy();
+                        info.jsEvent.preventDefault();
+                        //BookEvent(info.event.id);
+
+                    },
+                    select: function(info) {
+                        alert('selected ' + info.startStr + ' to ' + info.endStr);
+                    },
+                    eventDidMount: function(info) {
+                        $(info.el).popover({
+                                title: info.event.title,
+                                content: info.event.extendedProps.description,
+                                placement: "top",
+                                trigger: "hover",
+                                container: "body"
+                            }
+                        );
+                    }
+                });
+                calendar.render();
+            }
+        })(jQuery);
+    });
+    
+</script>]]></View>
+  </PartialViews>
+  <Macros />
+  <MacroPartialViews />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+  <MediaItems />
+</umbPackage>

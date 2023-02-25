@@ -1,0 +1,12 @@
+{
+  "javascript": [
+    "~/App_Plugins/FullCalendar/scripts/fullcalendar.js",
+    "~/App_Plugins/FullCalendar/scripts/moment.js",
+    "~/App_Plugins/FullCalendar/scripts/ui-calendar.js",
+    "~/App_Plugins/FullCalendar/fullCalendar-controller.js",
+    "~/App_Plugins/FullCalendar/fullCalendar-resources.js"
+  ],
+  "css": [
+    "~/App_Plugins/FullCalendar/css/fullcalendar.css"
+  ]
+}
