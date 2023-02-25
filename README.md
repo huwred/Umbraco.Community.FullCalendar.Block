@@ -9,3 +9,4 @@ This package installs a custom Angular preview for the Block Grid editor in the 
 When setting up a block to be part of the Grid, setting the 'Custom View' property to `fullcallendar.html` will generate preview HTML for the calendar.
 
 How to select the custom view when creating a Block List/Grid:
+![image](https://user-images.githubusercontent.com/4870243/221359142-d0213fc9-a42a-4e59-b9cc-f6d47c3fb915.png)
