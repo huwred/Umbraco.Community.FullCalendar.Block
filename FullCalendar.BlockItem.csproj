@@ -7,11 +7,11 @@
   <PropertyGroup>
     <Product>FullCalendar BlockItem</Product>
     <PackageId>FullCalendar.BlockItem</PackageId>
-    <Version>1.0.6</Version>
+    <Version>1.0.0</Version>
     <Authors>Huw Reddick</Authors>
     <Title>FullCalendar BlockItem</Title>
-    <Description>...</Description>
-    <PackageTags>umbraco plugin package</PackageTags>
+    <Description>A fullcalendar custom view for Umbraco BlockGrid</Description>
+    <PackageTags>umbraco plugin package umbraco-marketplace backoffice</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
