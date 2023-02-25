@@ -4,7 +4,7 @@
 **Umbraco.Community.FullCalendar.Block** easy to use rich HTML backoffice preview for the fullcalendar js component
 
 ## Usage
-This package installs a custom Angular preview for the Block Grid editor in the backoffice. It uses the fullcalendar javascript plugin to display events.
+This package installs a new element type 'fullcalendar' and a custom Angular preview for the Block Grid editor in the backoffice. It uses the fullcalendar javascript plugin to display events in a calendar.
 
 When setting up a block to be part of the Grid, setting the 'Custom View' property to `fullcallendar.html` will generate preview HTML for the calendar.
 
