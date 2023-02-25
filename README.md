@@ -10,3 +10,9 @@ When setting up a block to be part of the Grid, setting the 'Custom View' proper
 
 How to select the custom view when creating a Block List/Grid:
 ![image](https://user-images.githubusercontent.com/4870243/221359142-d0213fc9-a42a-4e59-b9cc-f6d47c3fb915.png)
+
+
+## License
+Copyright © 2023 Huw Reddick, and other contributors.
+
+Licensed under the MIT License.
