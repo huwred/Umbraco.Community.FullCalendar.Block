@@ -11,7 +11,7 @@ When setting up a block to be part of the Grid, setting the 'Custom View' proper
 How to select the custom view when creating a Block List/Grid:
 ![image](https://user-images.githubusercontent.com/4870243/221359142-d0213fc9-a42a-4e59-b9cc-f6d47c3fb915.png)
 Before and after of how component looks within the Block Grid:
-![image](https://user-images.githubusercontent.com/4870243/221359379-c999e260-bcf7-46e0-9a07-02ef6b2a7f6a.png)
+![image](https://user-images.githubusercontent.com/4870243/221359905-7aac1a77-2911-4569-91bb-aece4920a443.png)
 
 The Calendar accepts a datasource string which is used as the fullcalendar event source, it should be a URL pointing to an api which returns a json array of events
 ![image](https://user-images.githubusercontent.com/4870243/221359623-265349b9-0412-40b9-b0bd-19abfd5495cb.png)
