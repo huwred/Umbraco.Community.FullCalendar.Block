@@ -1,10 +1,10 @@
-# FullCalendar Block Preview
+# FullCalendar-Events Block Preview
 [![Platform](https://img.shields.io/badge/Umbraco-10.0+-%233544B1?style=flat&logo=umbraco)](https://umbraco.com/products/umbraco-cms/)
 
-**Umbraco.Community.FullCalendar.Block** easy to use rich HTML backoffice preview for the fullcalendar js component
+**Umbraco.Community.FullCalendar.Block** easy to use rich HTML backoffice preview for Events using the fullcalendar js component
 
 ## Usage
-This package installs a new element type 'fullcalendar' and a custom Angular preview for the Block Grid editor in the backoffice. It uses the fullcalendar javascript plugin to display events in a calendar.
+This package installs a new element type 'fullcalendar' and a custom Angular preview for the Block Grid editor in the backoffice. It uses the fullcalendar javascript plugin to display Events in a calendar control.
 
 When setting up a block to be part of the Grid, setting the 'Custom View' property to `fullcallendar.html` will generate preview HTML for the calendar.
 
