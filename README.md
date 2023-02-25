@@ -15,4 +15,4 @@ How to select the custom view when creating a Block List/Grid:
 ## License
 Copyright © 2023 Huw Reddick, and other contributors.
 
-Licensed under the MIT License.
+Licensed under the [MIT License](https://github.com/huwred/Umbraco.Community.FullCalendar.Block/blob/main/LICENSE.md).
