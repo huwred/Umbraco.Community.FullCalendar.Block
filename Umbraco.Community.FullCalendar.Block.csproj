@@ -16,6 +16,7 @@
     <PackageProjectUrl>https://github.com/huwred/Umbraco.Community.FullCalendar.Block</PackageProjectUrl>
     <RepositoryUrl>https://github.com/huwred/Umbraco.Community.FullCalendar.Block</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -34,6 +35,8 @@
     <None Remove="App_Plugins\FullCalendar.BlockItem\scripts\moment.min.js" />
     <None Remove="App_Plugins\FullCalendar.BlockItem\scripts\ui-calendar.min.js" />
     <None Remove="Migrations\package.xml" />
+    <None Remove="README.md" />
+    <Content Include="README.md" />
     <EmbeddedResource Include="Migrations\package.xml" />
   </ItemGroup>
 </Project>
