@@ -9,9 +9,13 @@
     <PackageId>Umbraco.Community.FullCalendar.Block</PackageId>
     <Version>1.0.0</Version>
     <Authors>Huw Reddick</Authors>
+    <Copyright></Copyright>
     <Title>FullCalendar BlockItem</Title>
     <Description>A fullcalendar custom view for Umbraco BlockGrid</Description>
     <PackageTags>umbraco plugin package umbraco-marketplace backoffice</PackageTags>
+    <PackageProjectUrl>https://github.com/huwred/Umbraco.Community.FullCalendar.Block</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/huwred/Umbraco.Community.FullCalendar.Block</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
