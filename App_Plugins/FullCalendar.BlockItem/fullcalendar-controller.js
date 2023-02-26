@@ -7,6 +7,16 @@ angular.module('umbraco').controller('fullCalendarController',
         $scope.uiCalendarConfig = uiCalendarConfig;
         $scope.events = [];
         $scope.eventSources = [];
+        $scope.calendarConfig = {
+            selectable: true,
+            selectHelper: true,
+            editable: true,
+            header:{
+                left: $scope.block.data.left,
+                center: $scope.block.data.center,
+                right: $scope.block.data.right
+            }
+        };
 
         FullCalendarResource.getEventsFromApi($scope.block.data.dataSource).then(function(response) {
 
@@ -43,23 +53,6 @@ angular.module('umbraco').controller('fullCalendarController',
             $scope.eventSources.push($scope.events);
 
         });
-
-        $scope.calendarConfig = {
-            selectable: true,
-            selectHelper: true,
-            editable: true,
-            header:{
-                left: $scope.block.data.left,
-                center: $scope.block.data.center,
-                right: $scope.block.data.right
-            }
-        };
-      
-        $scope.eventRender = function( event, element, view ) { 
-            element.attr({'tooltip': event.title,
-                'tooltip-append-to-body': true});
-            $compile(element)($scope);
-        };
 
         $scope.generateGuid = function() {
             return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
