@@ -17,7 +17,6 @@ angular.module('umbraco').controller('fullCalendarController',
                         function(dayOfWeek) {
                             const date = moment(item.startRecur);
                             const dow = date.isoWeekday();
-
                             // if we haven't yet passed the day of the week that I need:
                             if (dow <= dayOfWeek) { 
                                 // then just give me this week's instance of that day
