@@ -26,5 +26,4 @@ Copyright © 2023 Huw Reddick, and other contributors.
 
 Licensed under the [MIT License](https://github.com/huwred/Umbraco.Community.FullCalendar.Block/blob/main/LICENSE).
 
-## TODO
-Add event CRUD operations to the backoffice controller
+
