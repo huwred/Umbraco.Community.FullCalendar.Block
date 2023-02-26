@@ -1,10 +1,10 @@
 {
   "javascript": [
-    "~/App_Plugins/FullCalendar/scripts/fullcalendar.js",
-    "~/App_Plugins/FullCalendar/scripts/moment.js",
-    "~/App_Plugins/FullCalendar/scripts/ui-calendar.js",
-    "~/App_Plugins/FullCalendar/fullCalendar-controller.js",
-    "~/App_Plugins/FullCalendar/fullCalendar-resources.js"
+    "~/App_Plugins/FullCalendar/scripts/fullcalendar.min.js",
+    "~/App_Plugins/FullCalendar/scripts/moment.min.js",
+    "~/App_Plugins/FullCalendar/scripts/ui-calendar.min.js",
+    "~/App_Plugins/FullCalendar/fullcalendar-controller.js",
+    "~/App_Plugins/FullCalendar/fullcalendar-resources.js"
   ],
   "css": [
     "~/App_Plugins/FullCalendar/css/fullcalendar.css"

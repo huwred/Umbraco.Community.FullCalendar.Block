@@ -25,6 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="App_Plugins\FullCalendar.BlockItem\scripts\fullcalendar.min.js" />
+    <None Remove="App_Plugins\FullCalendar.BlockItem\scripts\moment.min.js" />
+    <None Remove="App_Plugins\FullCalendar.BlockItem\scripts\ui-calendar.min.js" />
     <None Remove="Migrations\package.xml" />
     <EmbeddedResource Include="Migrations\package.xml" />
   </ItemGroup>
