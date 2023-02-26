@@ -1,4 +1,6 @@
 {
+  "name": "FullCalendar BlockItem",
+  "version": "1.0.0",
   "javascript": [
     "~/App_Plugins/FullCalendar/scripts/fullcalendar.min.js",
     "~/App_Plugins/FullCalendar/scripts/moment.min.js",
