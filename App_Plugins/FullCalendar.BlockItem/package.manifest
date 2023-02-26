@@ -7,6 +7,6 @@
     "~/App_Plugins/FullCalendar/fullcalendar-resources.js"
   ],
   "css": [
-    "~/App_Plugins/FullCalendar/css/fullcalendar.css"
+    "~/App_Plugins/FullCalendar/css/fullcalendar.min.css"
   ]
 }

@@ -25,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="App_Plugins\FullCalendar.BlockItem\css\fullcalendar.min.css" />
     <None Remove="App_Plugins\FullCalendar.BlockItem\scripts\fullcalendar.min.js" />
     <None Remove="App_Plugins\FullCalendar.BlockItem\scripts\moment.min.js" />
     <None Remove="App_Plugins\FullCalendar.BlockItem\scripts\ui-calendar.min.js" />
