@@ -1,14 +1,12 @@
 {
-  "name": "FullCalendar BlockItem",
-  "version": "1.0.0",
   "javascript": [
-    "~/App_Plugins/FullCalendar/scripts/fullcalendar.min.js",
-    "~/App_Plugins/FullCalendar/scripts/moment.min.js",
-    "~/App_Plugins/FullCalendar/scripts/ui-calendar.min.js",
-    "~/App_Plugins/FullCalendar/fullcalendar-controller.js",
-    "~/App_Plugins/FullCalendar/fullcalendar-resources.js"
+    "~/App_Plugins/FullCalendarBlockItem/scripts/fullcalendar.min.js",
+    "~/App_Plugins/FullCalendarBlockItem/scripts/moment.min.js",
+    "~/App_Plugins/FullCalendarBlockItem/scripts/ui-calendar.min.js",
+    "~/App_Plugins/FullCalendarBlockItem/fullcalendar-controller.js",
+    "~/App_Plugins/FullCalendarBlockItem/fullcalendar-resources.js"
   ],
   "css": [
-    "~/App_Plugins/FullCalendar/css/fullcalendar.min.css"
+    "~/App_Plugins/FullCalendarBlockItem/css/fullcalendar.min.css"
   ]
 }

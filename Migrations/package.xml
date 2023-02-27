@@ -58,7 +58,7 @@
           <SortOrder>0</SortOrder>
           <Mandatory>False</Mandatory>
           <LabelOnTop>True</LabelOnTop>
-          <Description><![CDATA[Strings with comma/space separated values. Values separated by a comma will be displayed adjacently. Values separated by a space will be displayed with a small gap in between. May contain any of the following values: title, prev, next, prevYear, nextYear, today]]></Description>
+          <Description><![CDATA[Strings with comma/space separated values.Values separated by a comma will be displayed adjacently. Values separated by a space will be displayed with a small gap in between. May contain any of the following values: title, prev, next, prevYear, nextYear, today]]></Description>
           <Variations>Nothing</Variations>
         </GenericProperty>
         <GenericProperty>

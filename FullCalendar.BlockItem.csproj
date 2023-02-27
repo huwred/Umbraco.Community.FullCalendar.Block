@@ -7,7 +7,7 @@
   <PropertyGroup>
     <Product>FullCalendar BlockItem</Product>
     <PackageId>Umbraco.Community.FullCalendar.Block</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>Huw Reddick</Authors>
     <Copyright></Copyright>
     <Title>FullCalendar BlockItem</Title>
@@ -30,13 +30,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="App_Plugins\FullCalendar.BlockItem\css\fullcalendar.min.css" />
-    <None Remove="App_Plugins\FullCalendar.BlockItem\scripts\fullcalendar.min.js" />
-    <None Remove="App_Plugins\FullCalendar.BlockItem\scripts\moment.min.js" />
-    <None Remove="App_Plugins\FullCalendar.BlockItem\scripts\ui-calendar.min.js" />
     <None Remove="Migrations\package.xml" />
+    <EmbeddedResource Include="Migrations\package.xml" />
     <None Remove="README.md" />
     <Content Include="README.md" />
-    <EmbeddedResource Include="Migrations\package.xml" />
   </ItemGroup>
 </Project>
