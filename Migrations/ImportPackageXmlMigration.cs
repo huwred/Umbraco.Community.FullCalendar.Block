@@ -35,9 +35,7 @@ namespace FullCalendar.BlockItem.Migrations
 
         protected override void Migrate()
         {
-
             ImportPackage.FromEmbeddedResource<ImportPackageXmlMigration>().Do();
-            //Context.AddPostMigration<PublishRootBranchPostMigration>();
         }
 
     }

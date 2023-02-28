@@ -1,4 +1,6 @@
 {
+  "name": "FullCalendar Block View",
+  "version": "1.0.1",
   "javascript": [
     "~/App_Plugins/FullCalendarBlockItem/scripts/fullcalendar.min.js",
     "~/App_Plugins/FullCalendarBlockItem/scripts/moment.min.js",
