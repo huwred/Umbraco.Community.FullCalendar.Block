@@ -7,7 +7,7 @@
   <PropertyGroup>
     <Product>FullCalendar BlockItem</Product>
     <PackageId>Umbraco.Community.FullCalendar.Block</PackageId>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Authors>Huw Reddick</Authors>
     <Copyright></Copyright>
     <Title>FullCalendar BlockItem</Title>

@@ -2,7 +2,7 @@
 using Umbraco.Cms.Core.Packaging;
 using Umbraco.Extensions;
 
-namespace FullCalendar.BlockItem.Migrations
+namespace Umbraco.Community.FullCalendar.Block.Migrations
 {
     public class FullCalendarPackageMigrationPlan : PackageMigrationPlan
     {
